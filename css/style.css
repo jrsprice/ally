@@ -1,0 +1,395 @@
+/*
+I used RGBA to create transparency while developing so the mock would peek
+through making sure everything lines up with the mock.
+*/
+@font-face {
+  font-family: HelveticaNeueBold;
+  src: url("/fonts/HelveticaNeueBd.ttf"); }
+@font-face {
+  font-family: HelveticaNeueLight;
+  src: url("/fonts/HelveticaNeueLt.ttf"); }
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("/fonts/HelveticaNeue.ttf"); }
+@font-face {
+  font-family: HelveticaNeueMedium;
+  src: url("/fonts/HelveticaNeueMed.ttf"); }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+body {
+  padding: 101px 0 0 0;
+  color: #505050;
+  font-family: HelveticaNeue, Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+header {
+  height: 45px;
+  background-color: #318fc2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1; }
+  header .nav {
+    display: none; }
+    header .nav li a {
+      color: #f9f8f9; }
+    header .nav li.active a {
+      background-color: #006999; }
+  header .logo {
+    background: transparent url("/images/logo.png") no-repeat left center;
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    color: #1c264a;
+    margin-left: 21px;
+    text-decoration: none;
+    height: 45px;
+    width: 160px; }
+  header .mobile-nav-btn {
+    color: #f9f8f9;
+    float: right;
+    text-decoration: none;
+    line-height: 45px;
+    font-size: 1.8em;
+    padding: 0 20px; }
+
+.nav {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .nav li {
+    float: left; }
+    .nav li a {
+      text-transform: lowercase;
+      text-decoration: none;
+      display: block;
+      padding: 0 19px;
+      font-size: 16px;
+      line-height: 45px;
+      font-family: HelveticaNeue, Helvetica, Arial, "Lucida Grande", sans-serif; }
+    .nav li a:hover {
+      text-decoration: underline; }
+  .nav li.active a {
+    font-family: HelveticaNeueBold, Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding: 0 21px; }
+
+/* Typography */
+a {
+  color: #328fc2;
+  font-family: HelveticaNeue, Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  letter-spacing: .039em;
+  line-height: 1.2em;
+  font-family: HelveticaNeueLight, Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  line-height: 45px; }
+  h2 span {
+    padding-left: 14px;
+    margin-left: 7px;
+    line-height: 45px;
+    letter-spacing: 0.01em;
+    display: inline-block;
+    border-left: 1px solid #505050;
+    font-family: HelveticaNeue, Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+p {
+  margin: 24px 0 20px;
+  padding: 0 2px 0 2px;
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: .02em; }
+
+.title-medium {
+  font-size: 16px;
+  font-family: HelveticaNeueBold, Helvetica, Arial, "Lucida Grande", sans-serif;
+  letter-spacing: normal; }
+
+.title-large {
+  font-size: 24px;
+  letter-spacing: .01em;
+  font-family: HelveticaNeueLight, Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+.purple {
+  color: #650360; }
+
+.text-right {
+  text-align: right; }
+
+/* Mobile first layout structure */
+.container {
+  margin: 0 auto; }
+
+#content {
+  min-height: 100%;
+  height: auto;
+  padding: 0 18px 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  letter-spacing: 0.67px; }
+  #content > article {
+    padding-bottom: 67px; }
+    #content > article ul {
+      padding: 0;
+      margin: 12px 0 32px;
+      list-style-position: inside; }
+      #content > article ul li {
+        margin: 5px 0px;
+        padding-left: 1px;
+        letter-spacing: .018em; }
+  #content > aside {
+    padding-top: 9px; }
+
+/* Mobile info */
+.mobile-info {
+  padding: 13px 100px 16px 16px;
+  margin: 0 1px 49px 2px;
+  background-color: #bbd8c4;
+  position: relative; }
+  .mobile-info p {
+    margin: 8px 0 0 0;
+    padding: 0 45px 0 0; }
+  .mobile-info div.phone {
+    background: transparent url("/images/mobile.png") no-repeat center center;
+    width: 106px;
+    height: 178px;
+    bottom: 11px;
+    right: 29px;
+    position: absolute; }
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: none; }
+  table thead tr {
+    height: 28px; }
+    table thead tr th {
+      font-size: 12px;
+      font-weight: normal;
+      color: #999;
+      font-family: HelveticaNeueLight, Helvetica, Arial, "Lucida Grande", sans-serif; }
+    table thead tr th:first-of-type {
+      padding-right: 13px; }
+  table tfoot tr {
+    height: 26px; }
+    table tfoot tr td {
+      font-size: 12px;
+      font-weight: normal;
+      color: #999;
+      font-family: HelveticaNeueLight, Helvetica, Arial, "Lucida Grande", sans-serif; }
+  table tbody {
+    font-family: HelveticaNeue, Helvetica, Arial, "Lucida Grande", sans-serif; }
+    table tbody tr:first-of-type td {
+      font-family: HelveticaNeueBold, Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-size: 18px; }
+    table tbody tr {
+      height: 46px; }
+      table tbody tr td {
+        font-size: 16px;
+        padding: 0 13px 0 18px;
+        vertical-align: middle; }
+      table tbody tr td:nth-child(2), table tbody tr td:nth-child(3) {
+        text-align: right; }
+    table tbody tr:nth-child(odd) {
+      background-color: #eef5f0; }
+    table tbody tr:nth-child(even) {
+      background-color: #ddebe1; }
+
+/* Buttons */
+.btn {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background-color: #650360;
+  font-size: 18px;
+  font-family: HelveticaNeueBold, Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding: 7px 0 6px;
+  margin: 0 2px;
+  border: none; }
+
+/* Tabs */
+.tabs ul {
+  padding: 0;
+  margin: 24px 0 0;
+  list-style-type: none;
+  overflow: hidden;
+  height: 45px; }
+  .tabs ul li {
+    float: left; }
+    .tabs ul li a {
+      background-color: #ddebe1;
+      border: 1px solid #cccccc;
+      border-left: none;
+      border-bottom: none;
+      display: block;
+      font-size: 18px;
+      font-family: HelveticaNeue, Helvetica, Arial, "Lucida Grande", sans-serif;
+      padding: 7px 15px 5px;
+      margin-top: 9px;
+      text-decoration: none;
+      line-height: 22px; }
+  .tabs ul li.active a {
+    background-color: #f5f5f5;
+    color: inherit;
+    margin-top: 0;
+    padding-top: 16px;
+    padding-bottom: 6px; }
+  .tabs ul li.active:last-of-type a {
+    border-left: 1px solid #ccc;
+    margin-left: -1px; }
+.tabs .tab-content {
+  border-top: 1px solid #cccccc;
+  margin-top: -1px;
+  background-color: #f5f5f5;
+  padding: 17px; }
+  .tabs .tab-content article {
+    margin: 10px 0 23px; }
+  .tabs .tab-content h1 {
+    font-size: 16px;
+    letter-spacing: 0.03em; }
+    .tabs .tab-content h1 a {
+      text-decoration: none;
+      font-family: HelveticaNeueBold, Helvetica, Arial, "Lucida Grande", sans-serif; }
+    .tabs .tab-content h1 a:hover {
+      text-decoration: underline; }
+  .tabs .tab-content p {
+    margin-top: 8px;
+    padding: 0;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.5em; }
+  .tabs .tab-content .tab-group {
+    display: none; }
+  .tabs .tab-content .tab-group.active {
+    display: block; }
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: none; }
+  .modal .modal-shade {
+    background-color: #000;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .modal .modal-dialog {
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.6);
+    width: 90%;
+    left: 5%;
+    top: 55px; }
+    .modal .modal-dialog .modal-close {
+      background: transparent url("/images/close-icon.png") no-repeat center center;
+      width: 16px;
+      height: 15px;
+      float: right;
+      margin: 15px; }
+
+#modal-login form {
+  margin: 24px 30px 28px; }
+  #modal-login form .title-large {
+    padding-bottom: 20px; }
+  #modal-login form .btn {
+    float: none;
+    width: 100%;
+    margin: 0; }
+  #modal-login form .form-group {
+    margin: 20px 0; }
+  #modal-login form label {
+    font-family: HelveticaNeueBold, Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14px;
+    float: left;
+    margin: 7px 0;
+    width: 100%; }
+  #modal-login form input {
+    font-size: 14px;
+    border: 1px solid #328fc2;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 100%; }
+
+/* Footer, is sticky */
+footer {
+  background-color: #e7e8e9;
+  height: 50px;
+  clear: both; }
+  footer .copy {
+    line-height: 45px;
+    color: #328fc2;
+    text-align: center; }
+  footer .container {
+    padding-top: 4px; }
+  footer .nav {
+    display: none; }
+
+.clearboth {
+  clear: both; }
+
+/* Desktop last */
+@media screen and (min-width: 1024px) {
+  header .nav {
+    display: block; }
+  header .mobile-nav-btn {
+    display: none; }
+
+  .container {
+    width: 980px; }
+
+  #content > article {
+    float: left;
+    width: 703px; }
+  #content > aside {
+    width: 224px;
+    float: right; }
+
+  footer {
+    height: 100px;
+    margin-top: -100px; }
+    footer .copy {
+      float: left;
+      text-align: left;
+      padding-left: 20px; }
+    footer .nav {
+      display: block; }
+
+  .modal .modal-dialog {
+    width: 448px;
+    margin-left: -224px;
+    left: 50%;
+    top: 140px; }
+
+  #modal-login form .btn {
+    float: right;
+    width: 35%; }
+  #modal-login form label {
+    float: left;
+    width: 23%; }
+  #modal-login form input {
+    width: 77%; }
+
+  .title-large {
+    font-size: 28px; } }
+
+/*# sourceMappingURL=style.css.map */

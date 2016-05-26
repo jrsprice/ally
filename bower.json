@@ -1,0 +1,22 @@
+{
+  "name": "ally",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "jrsprice <jrsprice@github.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jrsprice/ally",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4"
+  }
+}

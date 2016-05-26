@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>URBANK</title>
+        <base href="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+                <a href="/" title="URBANK" class="logo"></a>
+                <a href="#" class="mobile-nav-btn">&#9776;</a>
+                <ul class="nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Employee</a></li>
+                    <li class="active"><a href="#">Company</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content" class="container">
+            <article>
+                <h1 class="purple">Best Bank Ever!</h1>
+                <p>
+                    Pellentesque habitant morbi tristique senectus et netus et <a href="#">malesuada</a> fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris <a href="#">placerat</a> eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+                </p>
+                <div class="title-medium">
+                    Reasons We&rsquo;re Awesome:
+                </div>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Aliquam tincidunt mauris eu risus.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Vestibulum auctor dapibus neque.</li>
+                </ul>
+                <div class="mobile-info">
+                    <div class="purple title-medium">Amazing Mobile Info</div>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+                    <div class="phone"></div>
+                </div>
+                <h2>Rates <span>Check them out.</span></h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="text-right">Annual Percentage Yield</th>
+                            <th class="text-right">Est. Earnings for 1 Year*</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td colspan="100%" class="text-right">*Based on $50,000 deposit.</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td colspan="100%">Loading...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <aside>
+                <div>
+                    <a href="#" class="btn" data-modal-target="#modal-login">Login</a>
+                </div>
+                <div class="tabs">
+                    <ul>
+                        <li class="active"><a href="#" data-tab-target="#news">News</a></li>
+                        <li><a href="#" data-tab-target="#archive">Archive</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="news" class="active tab-group">
+                            <article>
+                                <h1><a href="#">Lorem ipsum dolor</a></h1>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</p>
+                            </article>
+                            <article>
+                                <h1><a href="#">Lorem ipsum dolor</a></h1>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</p>
+                            </article>
+                            <article>
+                                <h1><a href="#">Lorem ipsum dolor</a></h1>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis</p>
+                            </article>
+                        </div>
+                        <div id="archive" class="tab-group">
+                            <article><h1><a href="#">Lorem ipsum dolor</a></h1></article>
+                            <article><h1><a href="#">Lorem ipsum dolor</a></h1></article>
+                            <article><h1><a href="#">Lorem ipsum dolor</a></h1></article>
+                            <article><h1><a href="#">Lorem ipsum dolor</a></h1></article>
+                            <article><h1><a href="#">Lorem ipsum dolor</a></h1></article>
+                            <article><h1><a href="#">Lorem ipsum dolor</a></h1></article>
+                            <article><h1><a href="#">Lorem ipsum dolor</a></h1></article>
+                            <article><h1><a href="#">Lorem ipsum dolor</a></h1></article>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="clearboth"></div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="copy">&copy; 2014 URBank</div>
+                <ul class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Employee</a></li>
+                    <li class="active"><a href="#">Company</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="clearboth"></div>
+            </div>
+        </footer>
+        <div id="modal-login" class="modal">
+            <div class="modal-shade"></div>
+            <div class="modal-dialog">
+                <a href="#" class="modal-close"></a>
+                <form method="POST">
+                    <div class="title-large">Sign In To Your Account</div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" value="">
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="clearboth"></div>
+                </form>
+            </div>
+        </div>
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
